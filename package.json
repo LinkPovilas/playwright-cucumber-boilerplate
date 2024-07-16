@@ -1,0 +1,45 @@
+{
+  "name": "playwright-cucumber-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "cucumber-js",
+    "dry": "cucumber-js --dry-run",
+    "lint": "prettier . --write && eslint . --fix",
+    "lint:ci": "prettier . --check && eslint .",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "cucumber",
+    "bdd",
+    "typescript",
+    "example"
+  ],
+  "author": "Povilas Linkevicius",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@eslint/js": "^9.7.0",
+    "@pickle-jar/cli": "^1.1.1",
+    "@playwright/test": "^1.45.1",
+    "@types/cucumber": "^7.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.10",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unicorn": "^54.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "envalid": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": "npm run lint"
+  }
+}
