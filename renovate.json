@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "Europe/Vilnius",
+  "schedule": "after 10pm, before 5:00am",
+  "groupName": "all-dependencies",
+  "matchUpdateTypes": ["patch", "minor", "major"],
+  "automerge": true,
+  "automergeType": "pr",
+  "major": {
+    "automerge": false
+  }
+}

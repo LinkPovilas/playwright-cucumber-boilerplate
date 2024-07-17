@@ -6,7 +6,6 @@
     "test": "cucumber-js",
     "dry": "cucumber-js --dry-run",
     "lint": "prettier . --write && eslint . --fix",
-    "lint:ci": "prettier . --check && eslint .",
     "prepare": "husky"
   },
   "keywords": [
