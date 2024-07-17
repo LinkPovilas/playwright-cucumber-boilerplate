@@ -17,12 +17,13 @@ jobs:
           node-version: lts/*
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Lint code
         run: npm run lint
 
   cucumber:
+    needs: lint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     container:
@@ -36,7 +37,7 @@ jobs:
           node-version: lts/*
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Run scenarios
         run: npm test
