@@ -28,6 +28,7 @@ module.exports = tseslint.config(
     files: ['**/*.cjs'],
     extends: [tseslint.configs.disableTypeChecked],
     rules: {
+      '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       'no-unsafe-assignment': 'off',
       'no-unsafe-member-access': 'off',
