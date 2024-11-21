@@ -17,7 +17,7 @@
   "author": "Povilas Linkevicius",
   "license": "MIT",
   "devDependencies": {
-    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/cucumber": "^11.0.0",
     "@eslint/js": "^9.7.0",
     "@pickle-jar/cli": "^1.1.1",
     "@playwright/test": "^1.46.1",
