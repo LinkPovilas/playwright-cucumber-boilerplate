@@ -22,7 +22,7 @@
     "@pickle-jar/cli": "^1.1.1",
     "@playwright/test": "^1.46.1",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.14.10",
+    "@types/node": "^22.0.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-unicorn": "^55.0.0",
